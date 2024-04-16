@@ -31,6 +31,38 @@ async function populateBreedSelect() {
         select.appendChild(option);
     });
 }
+// Function to fetch dog breed images
+async function fetchBreedImage(breedName) {
+    // Convert breed name to lowercase with spaces replaced by hyphens
+    const formattedBreedName = breedName.toLowerCase().replace(' ', '-');
+    
+    const response = await fetch(`https://dog.ceo/api/breed/${formattedBreedName}/images/random`);
+    const data = await response.json();
+    return data.message;
+}
+
+// Function to handle viewGallery button click
+function viewGallery() {
+    const selectedBreed = document.getElementById('breed-select').value;
+    const galleryContainer = document.getElementById('gallery-container');
+
+    if (selectedBreed) {
+        fetchBreedImage(selectedBreed)
+            .then(imageUrl => {
+                const breedImage = document.createElement('img');
+                breedImage.src = imageUrl;
+                breedImage.alt = `Picture of ${selectedBreed}`;
+                galleryContainer.innerHTML = ''; // Clear previous content
+                galleryContainer.appendChild(breedImage);
+            })
+            .catch(error => {
+                console.error('Error fetching breed picture:', error);
+            });
+    } else {
+        alert('Please select a breed');
+    }
+}
+
 
 // Call the populateBreedSelect function to populate the breed select dropdown initially
 populateBreedSelect();

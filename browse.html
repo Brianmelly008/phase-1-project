@@ -1,0 +1,30 @@
+<!-- browse.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Dog Breeds</title>
+    <link rel="stylesheet" href="css/browse.css">
+</head>
+<body> 
+    <div class="container-fluid">
+        <div class="container">
+            <h2>Browse Dog Breeds</h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <label for="breed-select">Choose a breed:</label>
+            <select id="breed-select">
+                <!-- Breed options will be dynamically populated here using JavaScript -->
+            </select>
+            <button onclick="viewGallery()">View Gallery</button>
+            <div id="gallery-container"></div> <!-- Container for breed picture -->
+        </div>
+    </div>
+    <script src="js/browse.js"></script>
+</body>
+</html>
+

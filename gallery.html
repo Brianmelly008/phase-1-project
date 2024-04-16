@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breed Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h2>Dog Breed Gallery</h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="browse.html">BROWSE</a></li>
+                <li>UPLOAD</li>
+                <li>LOGIN</li>
+            </ul>
+            <button class="btn"><ion-icon name="call-outline"></ion-icon>(254)90-288-540</button>
+        </div>
+        <div class="content">
+            <h1>Gallery for <span id="breed-name"></span></h1>
+            <div class="gallery">
+                <!-- Images for the selected breed will be dynamically loaded here -->
+                <!-- Example of image element: <img src="path_to_image" alt="Breed Image"> -->
+            </div>
+        </div>
+    </div>
+    <script src="js/gallery.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <main id="background-image" class="background-image"></main>
+</body>
+</html>

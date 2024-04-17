@@ -2,7 +2,7 @@
 
 // Function to fetch dog breeds from db.json
 async function fetchDogBreeds() {
-    const response = await fetch('db.json');
+    const response = await fetch('http://localhost:3000/');
     const data = await response.json();
     return data.dogBreeds;
 }

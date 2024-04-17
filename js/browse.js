@@ -1,5 +1,3 @@
-// browse.js
-
 // Function to fetch dog breeds from db.json
 async function fetchDogBreeds() {
     const response = await fetch('db.json');

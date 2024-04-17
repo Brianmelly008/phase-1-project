@@ -1,5 +1,3 @@
-// gallery.js
-
 // Function to parse query parameters from URL
 function parseQueryParams() {
     const params = {};

@@ -52,7 +52,7 @@ Step 8: Document Your Project
     Create documentation that outlines the features, functionalities, and usage instructions for your application.
     Include any external APIs or libraries you used, as well as any setup or configuration instructions for future developers
 
-    Live link :
+    Live link :https://undefinedyobra.github.io/phase-1-project/
 
 
     Technologies used
